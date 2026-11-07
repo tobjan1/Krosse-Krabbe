@@ -1,0 +1,44 @@
+/* Gemeinsam für alle Seiten von tobi */
+:root {
+    --meer: #0f5c7a;
+    --meer-hell: #d9eef5;
+    --holz: #8a5a33;
+    --sand: #f6e7c1;
+    --text: #2b2b2b;
+    --schrift-titel: "Lilita One", "Arial Black", sans-serif;
+    --schrift-text: "Nunito", Arial, sans-serif;
+}
+
+body {
+    margin: 0;
+}
+
+/* navleiste: Logo links, Links rechts */
+.nav-leiste {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background: var(--meer);
+}
+
+.logo img {
+    display: block;
+    height: 60px;
+}
+
+nav {
+    display: flex;
+    gap: 20px;
+}
+
+nav a {
+    color: white;
+    font-family: var(--schrift-text);
+    font-size: 20px;
+    text-decoration: none;
+}
+/* Gemeinsam für alle Seiten von tobi/
+
+// euer teil
+

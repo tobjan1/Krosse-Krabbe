@@ -1,0 +1,67 @@
+body {
+    font-family: var(--schrift-text);
+    font-size: 20px;
+    line-height: 1.6;
+    color: var(--text);
+    background: var(--meer-hell);
+}
+
+img {
+    max-width: 100%;
+}
+
+/* Sections: volle Breite, durch Hintergrundfarben getrennt */
+section {
+    padding: 60px 20px;
+    text-align: center;
+}
+
+h1,
+h2 {
+    margin: 0 0 20px;
+    font-family: var(--schrift-titel);
+    font-weight: normal;
+    line-height: 1.2;
+}
+
+h1 {
+    font-size: 64px;
+}
+
+h2 {
+    font-size: 40px;
+}
+
+.hero {
+    background: var(--meer-hell);
+    color: var(--text);
+}
+
+.hero h1 {
+    margin: 0;
+    color: var(--meer);
+}
+
+.invitation {
+    background: var(--sand);
+}
+
+.where-to-find {
+    background: var(--meer);
+    color: white;
+}
+
+.map img {
+    display: block;
+    width: 800px;
+    margin: 0 auto;
+}
+
+.button {
+    display: inline-block;
+    padding: 12px 28px;
+    background: var(--holz);
+    color: white;
+    font-weight: 700;
+    text-decoration: none;
+}

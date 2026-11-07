@@ -46,6 +46,10 @@ h2 {
     background: var(--sand);
 }
 
+.gif img {
+    width: 400px;
+}
+
 .where-to-find {
     background: var(--meer);
     color: white;

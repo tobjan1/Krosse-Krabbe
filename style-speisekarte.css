@@ -1,0 +1,69 @@
+body {
+  font-family: "Lilita One", "Arial Black", sans-serif;;
+  background: var(--meer-hell);
+}
+
+
+
+hr {
+    width: 40%;
+    height: 1px;
+    background: var(--meer);
+    margin: 20px auto;
+}
+
+h1 {
+    font-size: 55px;
+    color: #bd7b00
+}
+
+h2 {
+    font-size: 35px;
+    text-align: center;
+    color: #830000
+}
+
+p{
+    text-align:center;
+    font-size: 25px
+}
+
+#beschreibung {
+    font-family: "Nunito", Arial, sans-serif;
+    font-size: 20px;
+    text-align: center;
+    font-weight: 200;
+    margin-top: -12px;
+}
+
+#beschreibungkrabbenburger {
+    font-family: "Nunito", Arial, sans-serif;
+    font-size: 20px;
+    text-align: center;
+    font-weight: 200;
+    margin-top: -12px;
+    padding-left: 500px;
+    padding-right: 500px;
+}
+
+
+
+img{
+    width:300px;
+    height: auto;
+}
+
+
+#copyright{
+    text-align: center;
+    font-size: 10px;
+}
+
+
+footer {
+    background: var(--meer);
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    font-family: "Nunito", Arial, sans-serif;
+}

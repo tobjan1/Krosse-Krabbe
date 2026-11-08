@@ -12,8 +12,90 @@
 
   <!--styleseets --> 
   <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style-startseite.css">
+
+  <!--Mitarbeiter-Layout -->
+  <style>
+    body {
+      background-image: url("https://i.redd.it/763r2day3krb1.jpg");
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+    }
+
+    main {
+      text-align: center;
+    }
+
+    main h1 {
+      font-size: 2em;
+      font-weight: bold;
+      text-decoration: underline;
+      margin: 20px auto;
+    }
+
+    main h2 {
+      font-weight: bold;
+      text-align: center;
+      margin: 10px 0;
+    }
+
+    main img {
+      display: block;
+      width: 100%;
+      max-width: 450px;
+      height: auto;
+      margin: 20px auto 10px auto;
+    }
+
+    .beschreibung {
+      box-sizing: border-box;
+      border: 2px solid black;
+      background-color: #f4e4b8;
+      padding: 15px;
+      width: 100%;
+      max-width: 450px;
+      margin: 0 auto 30px auto;
+      text-align: center;
+    }
+
+    .inhaber {
+      margin-bottom: 40px;
+    }
+
+    /* Mitarbeiter nebeneinander, gleiche Höhe */
+    .mitarbeiter-reihe {
+      display: flex;
+      justify-content: space-between;
+      align-items: stretch;
+      gap: 40px;
+    }
+
+    .mitarbeiter-links,
+    .mitarbeiter-rechts {
+      width: 45%;
+      display: flex;
+      flex-direction: column;
+    }
+
+    /* Alle Mitarbeiterbilder gleich hoch, damit die Beschreibungen auf einer Höhe beginnen */
+    .mitarbeiter-links img,
+    .mitarbeiter-rechts img {
+      height: 350px;
+      object-fit: contain;
+    }
+
+    /* Beschreibungen füllen den Rest und sind gleich hoch */
+    .mitarbeiter-links .beschreibung,
+    .mitarbeiter-rechts .beschreibung {
+      flex: 1;
+    }
+  </style>
 </head>
 <body>
+
+
 <header>
   <div class="nav-leiste">
     <div class="logo"><img src="https://imgs.search.brave.com/SMmshw4uBbfMezgV8HNVYIJt54JvQYf8te3jxyseBW8/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9taXIt/czMtY2RuLWNmLmJl/aGFuY2UubmV0L3By/b2plY3RzLzQwNC9h/Mjg5NDAxNjM0OTEw/OTEuWTNKdmNDd3hN/emd3TERFd09EQXNN/amN3TERBLmpwZw" alt=""></div>
@@ -25,8 +107,36 @@
   </div>
 </header>
 
-  <main>
-    //euer Inhalt
-  </main>
+
+
+<main>
+  <!-- Inhaber -->
+  <section class="inhaber">
+    <h1>Inhaber: Mr. Krabs</h1>
+    <img src="https://i.redd.it/vm2di4tgyh7d1.png" alt="Eugen Krabs, Chef und Inhaber der Krossen Krabbe">
+    <p class="beschreibung">Eugen Krabs ist der Besitzer und Chef der Krossen Krabbe.<br>Er kümmert sich um das Restaurant und hat besonders den Gewinn im Blick.</p>
+  </section>
+
+  <!-- Mitarbeiter -->
+  <h1>Mitarbeiter</h1>
+
+  <div class="mitarbeiter-reihe">
+    <!-- SpongeBob Schwammkopf (links) -->
+    <section class="mitarbeiter-links">
+      <h2>SpongeBob Schwammkopf</h2>
+      <img src="https://www.theodysseyonline.com/media-library/image.jpg?id=55710153&amp;width=980&amp;quality=50" alt="SpongeBob Schwammkopf, Burgerbrater in der Krossen Krabbe">
+      <p class="beschreibung">SpongeBob arbeitet als Burgerbrater in der Krossen Krabbe.<br>Mit viel Freude, Fleiß und guter Laune bereitet er die leckeren Krabbenburger zu.</p>
+    </section>
+
+    <!-- Thaddäus Tentakel (rechts) -->
+    <section class="mitarbeiter-rechts">
+      <h2>Thaddäus Tentakel</h2>
+      <img src="https://static.wikia.nocookie.net/spongebob/images/c/ca/Krusty_Krab_Training_Video_120.png/revision/latest/scale-to-width-down/1000?cb=20211125124457" alt="Thaddäus Tentakel, Kassierer in der Krossen Krabbe">
+      <p class="beschreibung">Thaddäus arbeitet als Kassierer in der Krossen Krabbe.<br>Er nimmt die Bestellungen entgegen und kümmert sich um die Kasse, auch wenn er dabei oft schlecht gelaunt ist.</p>
+    </section>
+  </div>
+</main>
+
+
 </body>
 </html>
